@@ -1,5 +1,8 @@
  list of all possible coordinates within a given cuboid dimensions, excluding coordinates where the sum of the three values is equal to a given number.
-the cod efor this
+the code for this...
+
+ HOW TO SOLVE:- "You are given three integers x, y, and z, representing the dimensions of a cuboid, along with an integer n.
+ Print a list of all possible coordinates given by (i, j, k) on a 3D grid where the sum of i, j, and k is not equal to n."
 
 if _ _name_ _ == '_ _main_ _':
     x = int(input(""))
@@ -17,11 +20,13 @@ if _ _name_ _ == '_ _main_ _':
 EXPLANATION:-
 (1)   if __name__ == '__main__':
 
-This line checks if the code is being run as the main program and not imported as a module. It ensures that the following code block will only execute if the file is being run directly.
+This line checks if the code is being run as the main program and not imported as a module. 
+It ensures that the following code block will only execute if the file is being run directly.
 
 (2)   x = int(input()), y = int(input()), z = int(input()), n = int(input()):
 
-These lines prompt the user to enter four integer values for x, y, z, and n. The input() function reads the user's input as a string, and the int() function is used to convert the string input into integer values.
+These lines prompt the user to enter four integer values for x, y, z, and n.
+The input() function reads the user's input as a string, and the int() function is used to convert the string input into integer values.
 
 
 (3)   coordinates = []:
