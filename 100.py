@@ -22,5 +22,35 @@ def fact(x):
 x = int(input("Enter the Number for factorial:-"))
 print (fact(x))
 
+""" (Q2)
+"""
+# Initialize an empty list
+my_list = []
 
-      
+# Read the number of commands
+n = int(input())
+
+# Process each command
+for _ in range(n):
+    command = input().split()
+    
+    # Perform the specified operation
+    if command[0] == "insert":
+        position = int(command[1])
+        value = int(command[2])
+        my_list.insert(position, value)
+    elif command[0] == "print":
+        print(my_list)
+    elif command[0] == "remove":
+        value = int(command[1])
+        my_list.remove(value)
+    elif command[0] == "append":
+        value = int(command[1])
+        my_list.append(value)
+    elif command[0] == "sort":
+        my_list.sort()
+    elif command[0] == "pop":
+        my_list.pop()
+    elif command[0] == "reverse":
+        my_list.reverse()
+
